@@ -1,5 +1,5 @@
 let arr = []
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 8; i++) {
   let e = Math.floor(Math.random() * 110)
   arr.push(e)
 }
@@ -19,10 +19,19 @@ function mergeSort(
     merge(arr, left, mid, right, temp)
   }
 }
+/**
+ * 
+ * @param {Array } arr 
+ * @param {*} left 
+ * @param {*} mid 
+ * @param {*} right 
+ * @param {*} temp 
+ */
 function merge(arr, left, mid, right, temp) {
   let i = left
   let j = mid + 1
   let t = 0 //临时数组指针
+  console.log("merge", arr.slice(left, right + 1) );
   while (i <= mid && j <= right) {
     if (arr[i] <= arr[j]) {
       temp[t++] = arr[i++]
