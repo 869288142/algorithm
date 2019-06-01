@@ -8,8 +8,8 @@ function dfs(dir) {
   stack.push(dir)
   result.push(dir)
   while (stack.length > 0) {
-    let point = stack[stack.length - 1]
-    stack.pop()
+    let point = stack[0]
+    stack.shift()
     if(point.includes("git")){
       continue
     }
