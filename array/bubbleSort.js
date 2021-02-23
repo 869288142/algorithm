@@ -34,7 +34,6 @@ function bubbleSort(arr) {
     for(let j = 0; j < i; j++) {
       arr[j] > arr[j + 1] && swap(arr, j, j + 1)
     }
-    console.log(i ,arr);
   }
   return arr
 } 

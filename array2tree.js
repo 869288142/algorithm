@@ -15,19 +15,17 @@ let list = [
  */
 function convert(data) {
   let result = []
-  // 建立花名册
   const map = data.reduce((res, item) => ((res[item.id] = item), res), {})
-  // 根据花名册找爸爸
   data.forEach(item => {
-    // 辈分低的找到自己的爸爸，前面没有人则自己作为一条队伍，有了就站在队伍后面
     if (item.parentId !== 0) {
       map[item.parentId].children ? map[item.parentId].children.push(item) : (map[item.parentId].children = [item])
-    } else { // 辈分最大的坐一边
+    } else { 
       result.push(item)
     }
   })
   return result
 }
+console.log(convert(list));
 // 递归
 function convert(source, parentId = 0){
   let trees = [];

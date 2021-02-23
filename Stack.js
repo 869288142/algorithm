@@ -1,7 +1,13 @@
 let Stack = (function IIFE() {
   let items = new WeakMap()
   class Stack {
-    constructor() {
+    constructor() {/**
+ * @param {number[]} cost
+ * @return {number}
+ */
+var minCostClimbingStairs = function(cost) {
+
+};
       items.set(this, [])
     }
     push(e) {
