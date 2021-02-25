@@ -47,6 +47,7 @@ function binarySearch(arr, key) {
     }else if(arr[mid] > key) {
       // 区间划分为[left, mid)
       right = mid 
+      // [mid, right)
     }else if(arr[mid] < key) {
       left = mid + 1
     } 
