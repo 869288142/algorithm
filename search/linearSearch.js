@@ -1,4 +1,6 @@
 // 线性查找
+// 时间复杂度On
+// 空间复杂度O1
 // 遍历所有元素，返回存在的下标或者-1
 function linearSearch(arr, key) {
   let index = -1
