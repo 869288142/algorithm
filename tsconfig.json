@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "importHelpers": true,
+      "esModuleInterop":true,
+      "moduleResolution":"node",
+      "strictNullChecks":true,
+      "noImplicitAny":true, // 禁用隐式any
+      "noImplicitThis":true,// 禁用隐式this
+      "noUnusedLocals":true, // 未使用的局部变量
+      "noUnusedParameters":true,  // 未使用的参数
+      "strict":true,
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
